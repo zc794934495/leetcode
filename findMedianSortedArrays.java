@@ -9,7 +9,7 @@ class Solution {
         int left = -1;
         for(int i = 0;i < len / 2;i++){
             left = right;
-            if(aStart < m && (bStart >= n || nums1[aStart] > nums2[bStart])){
+            if(aStart < m && (bStart >= n || nums1[aStart] < nums2[bStart])){
                 right = nums1[aStart++];
             }else{
                 right = nums2[bStart++];
