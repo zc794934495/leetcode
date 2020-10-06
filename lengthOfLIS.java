@@ -15,7 +15,7 @@ class Solution {
                 int left = 0;
                 int right = end;
                 while(left < right){
-                    int mid = left + ((left + right) >>> 1);
+                    int mid = left + ((right - left) >>> 1);
                     if(tail[mid] < nums[i]){
                         left = mid + 1;
                     }else{
