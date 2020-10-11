@@ -28,7 +28,7 @@ class Solution {
                 if(dp[target] == true){
                     return true;
                 }
-                //上一行的值(不选择nums[i])，这一行减去nums[i]的值（选择nums[i]）
+                //上一行的值(不选择nums[i])，上一行减去nums[i]的值（选择nums[i]）
                 dp[j] = dp[j] || dp[j - nums[i]];
             }
         }
